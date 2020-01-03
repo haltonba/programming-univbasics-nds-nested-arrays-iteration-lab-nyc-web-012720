@@ -18,8 +18,10 @@ def find_greater_pair(src)
   while outer_counter < src.length do
     inner_counter = 0
     while inner_counter < src[outer_counter].length -1 do
-      src[outer_counter][0] > src[outer_counter][1] ? 
+      src[outer_counter][0] > src[outer_counter][1] ? array_2.push src[0] : array_2.push src[1]
+      inner_counter += 1
     end
+    outer_counter += 1
   end
 end
 
