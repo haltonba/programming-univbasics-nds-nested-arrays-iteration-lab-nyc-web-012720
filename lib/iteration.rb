@@ -17,12 +17,13 @@ def find_greater_pair(src)
   array_2 = []
   while outer_counter < src.length do
     inner_counter = 0
-    while inner_counter < src[outer_counter].length -1 do
-      src[outer_counter][0] > src[outer_counter][1] ? array_2.push src[0] : array_2.push src[1]
+    while inner_counter < src[outer_counter].length - 1 do
+      src[outer_counter][0] > src[outer_counter][1] ? array_2 << src[outer_counter][0] : array_2 << src[outer_counter][1]
       inner_counter += 1
     end
     outer_counter += 1
   end
+  array_2
 end
 
 def total_even_pairs(src)
