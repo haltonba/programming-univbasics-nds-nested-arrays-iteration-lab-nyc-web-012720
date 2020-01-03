@@ -27,11 +27,12 @@ def find_greater_pair(src)
 end
 
 def total_even_pairs(src)
-  # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
-  # if both numbers in the pair are even, then add both those numbers to the
-  # total
-  #
-  # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
-  # the number was even. Review the operator documentation if you've forgotten
-  # this!
+  outer_counter = 0
+  total = 0
+  while outer_counter < src.length do
+    inner_counter = 0
+    while inner_counter < src[outer_counter].length -1 do
+      
+    end
+  end
 end
