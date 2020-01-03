@@ -32,7 +32,10 @@ def total_even_pairs(src)
   while outer_counter < src.length do
     inner_counter = 0
     while inner_counter < src[outer_counter].length -1 do
-      
+      src[outer_counter][0].even? && src[outer_counter][1].even? ? total += (src[outer_counter][0] + src[outer_counter][1]) : total += 0
+      inner_counter += 1
     end
+    outer_counter += 1
   end
+  total
 end
