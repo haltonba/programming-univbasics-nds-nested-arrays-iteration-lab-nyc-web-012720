@@ -12,7 +12,7 @@ def join_ingredients(src)
   while outer_counter < src.length do
     inner_counter = 0
     while inner_counter < src[outer_counter].length do
-      array_1.push "I love #{src[outer_counter][inner_counter]} and #{src[outer_counter][inner_counter + 1]}"
+      array_1.push "I love #{src[outer_counter][inner_counter]} and #{src[outer_counter][inner_counter + 1]} on my pizza"
       inner_counter += 1
     end
     outer_counter += 1
